@@ -1,0 +1,290 @@
+[
+	{
+		"key": "ctrl+up",
+		"command": "cursorMove",
+		"args": {
+			"to": "up",
+			"by": "line",
+			"value": 5
+		},
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "cursorMove",
+		"args": {
+			"to": "down",
+			"by": "line",
+			"value": 5
+		},
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+up",
+		"command": "cursorMove",
+		"args": {
+			"to": "up",
+			"by": "line",
+			"value": 10
+		},
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+down",
+		"command": "cursorMove",
+		"args": {
+			"to": "down",
+			"by": "line",
+			"value": 10
+		},
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "explorer.newFile"
+	},
+	{
+		"key": "ctrl+[Semicolon]",
+		"command": "explorer.newFolder"
+	},
+	{
+		"key": "ctrl+k ctrl+e",
+		"command": "workbench.files.action.collapseExplorerFolders"
+	},
+	{
+		"key": "alt+q",
+		"command": "editor.action.insertSnippet",
+		"args": {
+			"snippet": "console.log('${TM_SELECTED_TEXT}', ${TM_SELECTED_TEXT})",
+		},
+		"when": "editorFocus",
+	},
+	{
+		"key": "ctrl+alt+s",
+		"command": "workbench.action.toggleStatusbarVisibility"
+	},
+	{
+		"key": "ctrl+f12",
+		"command": "editor.action.revealDefinition"
+	},
+	{
+		"key": "ctrl+;",
+		"command": "editor.action.smartSelect.grow",
+		"when": "editorTextFocus"
+	},
+	// {
+	// 	"key": "ctrl+alt+left",
+	// 	"command": "workbench.action.navigateBack"
+	// },
+	// {
+	// 	"key": "ctrl+alt+right",
+	// 	"command": "workbench.action.navigateForward"
+	// },
+	{
+		"key": "ctrl+alt+;",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+pagedown",
+		"command": "-scrollPageDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "alt+pagedown",
+		"command": "scrollLineDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+down",
+		"command": "-scrollLineDown",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "alt+pageup",
+		"command": "scrollLineUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+up",
+		"command": "-scrollLineUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "alt+pageup",
+		"command": "-scrollPageUp",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "ctrl+alt+q",
+		"command": "workbench.action.quit"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "-workbench.action.quit"
+	},
+	{
+		"key": "ctrl+q",
+		"command": "workbench.action.quickOpenView"
+	},
+	{
+		"key": "alt+right",
+		"command": "cursorEnd"
+	},
+	{
+		"key": "alt+left",
+		"command": "cursorHome"
+	},
+	{
+		"key": "shift+alt+right",
+		"command": "cursorEndSelect"
+	},
+	{
+		"key": "shift+alt+left",
+		"command": "cursorHomeSelect"
+	},
+	{
+		"key": "shift+space",
+		"command": "workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "ctrl+shift+e",
+		"command": "-workbench.view.explorer",
+		"when": "viewContainer.workbench.view.explorer.enabled"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-workbench.action.chat.applyInEditor",
+		"when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-workbench.action.chat.insertCodeBlock",
+		"when": "accessibleViewInCodeBlock && chatIsEnabled || chatIsEnabled && inChat && !inChatInput"
+	},
+	{
+		"key": "ctrl+enter",
+		"command": "-github.copilot.generate",
+		"when": "editorTextFocus && github.copilot.activated && !commentEditorFocused && !inInteractiveInput && !interactiveEditorFocused"
+	},
+	{
+		"key": "ctrl+,",
+		"command": "-workbench.action.openSettings"
+	},
+	{
+		"key": "ctrl+k ctrl+b",
+		"command": "-editor.action.setSelectionAnchor",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+.",
+		"command": "-editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+g",
+		"command": "editor.action.setSelectionAnchor",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+g",
+		"command": "editor.action.selectFromAnchorToCursor",
+		"when": "editorTextFocus && selectionAnchorSet"
+	},
+	{
+		"key": "ctrl+k ctrl+k",
+		"command": "-editor.action.selectFromAnchorToCursor",
+		"when": "editorTextFocus && selectionAnchorSet"
+	},
+	{
+		"key": "ctrl+insert",
+		"command": "editor.action.goToSelectionAnchor"
+	},
+	{
+		"key": "shift+pageup",
+		"command": "-cursorColumnSelectPageUp",
+		"when": "editorColumnSelection && textInputFocus"
+	},
+	{
+		"key": "shift+pageup",
+		"command": "-cursorPageUpSelect",
+		"when": "textInputFocus"
+	},
+	{
+		"key": "shift+pageup",
+		"command": "editor.action.jumpToBracket",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+\\",
+		"command": "-editor.action.jumpToBracket",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+pagedown",
+		"command": "editor.emmet.action.matchTag"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "workbench.action.gotoLine"
+	},
+	{
+		"key": "ctrl+g",
+		"command": "-workbench.action.gotoLine"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "workbench.action.showAllSymbols"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "-workbench.action.showAllSymbols"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "-workbench.action.quickOpen"
+	},
+	{
+		"key": "shift+backspace",
+		"command": "deleteWordPartLeft"
+	},
+	{
+		"key": "shift+delete",
+		"command": "deleteWordPartRight"
+	},
+	{
+		"key": "ctrl+alt+f",
+		"command": "search.action.openEditor"
+	},
+	{
+		"key": "ctrl+alt+up",
+		"command": "-quickInput.previousSeparator",
+		"when": "inQuickInput && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "ctrl+f4",
+		"command": "git.openChange",
+		"when": "!isInDiffEditor"
+	},
+	{
+		"key": "ctrl+f4",
+		"command": "git.openFile",
+		"when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+    "when": "accessibilityHelpIsShown"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  }
+]
